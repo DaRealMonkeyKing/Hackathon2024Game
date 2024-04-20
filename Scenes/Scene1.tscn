@@ -1,11 +1,12 @@
 [gd_scene load_steps=3 format=3 uid="uid://dhtq1a1makslo"]
 
-[ext_resource type="Texture2D" uid="uid://bwaco83yuctio" path="res://icon.svg" id="1_8x85n"]
-[ext_resource type="Script" path="res://Scripts/Icon.cs" id="2_o2en8"]
+[ext_resource type="Script" path="res://Scripts/PlayerCharacter.cs" id="2_mq2ui"]
+[ext_resource type="PackedScene" uid="uid://blpog3uvxeid5" path="res://Scenes/player_character.tscn" id="3_wuccs"]
 
 [node name="Node2D" type="Node2D"]
+position = Vector2(130, 113)
 
-[node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(213, 229)
-texture = ExtResource("1_8x85n")
-script = ExtResource("2_o2en8")
+[node name="PlayerCharacter" parent="." instance=ExtResource("3_wuccs")]
+position = Vector2(265, 176)
+script = ExtResource("2_mq2ui")
+speed = 500

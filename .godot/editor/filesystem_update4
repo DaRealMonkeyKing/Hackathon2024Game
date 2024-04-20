@@ -1,2 +1,7 @@
-res://Scene1.tscn
-res://UI.tscn
+res://Scripts/PlayerCharacterMovement.gd
+res://Scenes/Scene1.tscn
+res://Scenes/UI.tscn
+res://Scenes/player_character.tscn
+res://Scripts/Icon.cs
+res://Scripts/new_script.cs
+res://Scripts/PlayerCharacter.cs

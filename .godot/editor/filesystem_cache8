@@ -1,0 +1,7 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1713639743
+Icon.cs::CSharpScript::-1::1713639484::0::1::::<>Sprite2D<>::
+icon.svg::CompressedTexture2D::3930723456472371130::1713635552::1713635556::1::::<><>::
+new_script.cs::CSharpScript::-1::1713638816::0::1::::<>Node<>::
+Scene1.tscn::PackedScene::7690825077109010460::1713638898::0::1::::<><>::uid://bwaco83yuctio::::res://icon.svg<>res://Icon.cs
+UI.tscn::PackedScene::8453895514531637236::1713638899::0::1::::<><>::res://new_script.cs

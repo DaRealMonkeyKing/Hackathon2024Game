@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8lzuay+kHvb+4eepwvZl5g4f8VkqmveCf4MEAEXZD9KTJtzgydrVwCdyJaOK9fUk8z9Ge2M63eUS1NRMjfa5Gg==",
+  "dgSpecHash": "gB+/9nwc/W613F9rU2UcxEEV/JsOPhUJiNPdG37KA4/xZNaWIYO+Bx0ohQhPCusxnzcifBboLet41UdOAoM0+Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\niel2\\Documents\\Hackathon 2024\\Hackathon 2024.csproj",
+  "projectFilePath": "C:\\Users\\niel2\\Documents\\Hackathon 2024\\Hackathon2024Game\\Hackathon 2024.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\niel2\\.nuget\\packages\\godot.sourcegenerators\\4.2.2\\godot.sourcegenerators.4.2.2.nupkg.sha512",
     "C:\\Users\\niel2\\.nuget\\packages\\godotsharp\\4.2.2\\godotsharp.4.2.2.nupkg.sha512",

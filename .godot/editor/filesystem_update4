@@ -7,3 +7,4 @@ res://Scripts/new_script.cs
 res://Scenes/mob.gd
 res://Scenes/mob.tscn
 res://Scripts/mob.gd
+res://Scripts/PlayerCharacterMovement.gd

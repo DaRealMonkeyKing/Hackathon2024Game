@@ -5,7 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://blpog3uvxeid5" path="res://Scenes/player_character.tscn" id="3_wuccs"]
 
 [node name="Game" type="Node2D"]
-position = Vector2(130, 113)
+y_sort_enabled = true
+position = Vector2(-1, 0)
 
 [node name="PlayerCharacter" parent="." instance=ExtResource("3_wuccs")]
 position = Vector2(265, 176)

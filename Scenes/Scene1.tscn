@@ -1,12 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://dhtq1a1makslo"]
+[gd_scene load_steps=4 format=3 uid="uid://dhtq1a1makslo"]
 
 [ext_resource type="Script" path="res://Scripts/PlayerCharacter.cs" id="2_mq2ui"]
+[ext_resource type="PackedScene" uid="uid://t2suv80gl4gd" path="res://Scenes/mob.tscn" id="3_tc3pt"]
 [ext_resource type="PackedScene" uid="uid://blpog3uvxeid5" path="res://Scenes/player_character.tscn" id="3_wuccs"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Game" type="Node2D"]
 position = Vector2(130, 113)
 
 [node name="PlayerCharacter" parent="." instance=ExtResource("3_wuccs")]
 position = Vector2(265, 176)
+platform_on_leave = 2
+platform_floor_layers = 4294901760
 script = ExtResource("2_mq2ui")
 speed = 500
+
+[node name="Mob" parent="." instance=ExtResource("3_tc3pt")]
+position = Vector2(104, 397)
+platform_on_leave = 2
+platform_floor_layers = 4294901760

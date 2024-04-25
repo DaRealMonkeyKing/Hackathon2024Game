@@ -1,10 +1,9 @@
-res://Scenes/player_character.tscn
 res://Scenes/Scene1.tscn
-res://Scenes/UI.tscn
-res://Scripts/Icon.cs
-res://Scripts/PlayerCharacter.cs
-res://Scripts/new_script.cs
-res://Scenes/mob.gd
-res://Scenes/mob.tscn
-res://Scripts/mob.gd
 res://Scripts/PlayerCharacterMovement.gd
+res://Scenes/UI.tscn
+res://Scenes/player_character.tscn
+res://Scenes/mob.tscn
+res://Scripts/new_script.cs
+res://Scripts/PlayerCharacter.cs
+res://Scripts/Icon.cs
+res://Scripts/mob.gd

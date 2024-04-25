@@ -1,7 +1,7 @@
 res://Scenes/Scene1.tscn
+res://Scripts/PlayerCharacter.cs
 res://Scenes/UI.tscn
 res://Scenes/player_character.tscn
 res://Scenes/mob.tscn
 res://Scripts/new_script.cs
-res://Scripts/PlayerCharacter.cs
 res://Scripts/Icon.cs

@@ -13,7 +13,7 @@ position = Vector2(265, 176)
 platform_on_leave = 2
 platform_floor_layers = 4294901760
 script = ExtResource("2_mq2ui")
-playerDirection = Vector2(0, 0)
+speed = 500
 
 [node name="Mob" parent="." instance=ExtResource("3_tc3pt")]
 position = Vector2(104, 397)

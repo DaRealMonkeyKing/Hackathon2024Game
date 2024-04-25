@@ -6,3 +6,4 @@ res://Scenes/mob.tscn
 res://Scripts/new_script.cs
 res://Scripts/PlayerCharacter.cs
 res://Scripts/Icon.cs
+res://Scripts/mob.gd

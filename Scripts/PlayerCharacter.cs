@@ -40,8 +40,7 @@ public partial class PlayerCharacter : CharacterBody2D
 	private void getInput() {
 		if (dashing) {
 			// stops the dash because math!!!!!
-			// TODO: Make the dash more smooth, feels unnatural at the end, like a delay before we can move
-			// might be because we are still "dashing" just so slowly, the player can't see
+			// MAke the dash more smooth, feels unnatural at the end
 			if (currentVelocity.DistanceTo(Vector2.Zero) < Math.Abs(dash_acceleration)) {
 				dashing = false;
 				currentVelocity = Vector2.Zero;

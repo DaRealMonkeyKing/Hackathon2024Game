@@ -17,13 +17,13 @@ public partial class PlayerCharacter : CharacterBody2D
 
 
 	private bool dashing = false;
-	private int dash_speed = 3000;
 	// private int dash_time = 5;
 	// private int dash_length = 30000;
 	// c# don't allow this 
 	// private int dash_acceleration = 2 * (dash_length - dash_speed*dash_time) / (dash_time*dash_time) ;  // d = v1t + 1/2at^2
 	// private int dash_acceleration = 5 * (30000 - 10000*5) / 25;
 	private int dash_acceleration = -150;
+	private int dash_speed = 3000;
 
 	private int acceleration = 0;
 	
@@ -40,7 +40,7 @@ public partial class PlayerCharacter : CharacterBody2D
 	private void getInput() {
 		if (dashing) {
 			// stops the dash because math!!!!!
-			// MAke the dash more smooth, feels unnatural at the end
+			// TODO: Make the dash more smooth, feels unnatural at the end, might be because its still "dashing" just really slowly
 			if (currentVelocity.DistanceTo(Vector2.Zero) < Math.Abs(dash_acceleration)) {
 				dashing = false;
 				currentVelocity = Vector2.Zero;

@@ -8,7 +8,7 @@ public class Gun : Weapon {
         this.projectileSpeed = projectileSpeed;
     }
 
-    public void Attack() {
+    public new void Attack() {
         
     }
 }

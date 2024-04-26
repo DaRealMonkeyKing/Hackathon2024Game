@@ -10,13 +10,12 @@ public class Weapon {
         this.damage = damage;
         this.fireRate = fireRate;
     }
-    
-    // is there really a point to having this?
-    // public void Attack() {
-    //     GD.Print("Attack");
-    // }
 
-    // public void SpecialAttack() {
-    //     GD.Print("Ult");
-    // }
+    public void Attack() {
+        GD.Print("Attack");
+    }
+
+    public void SpecialAttack() {
+        GD.Print("Ult");
+    }
 }

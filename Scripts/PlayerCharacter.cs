@@ -60,8 +60,13 @@ public partial class PlayerCharacter : CharacterBody2D
 				currentVelocity = playerDirection * speed;
 			}
 
-			mousePos = GetViewport().GetMousePosition();  // get mouse position based off viewport
-			mouseDirection = (mousePos - Position).Normalized();  // Get the direction the mouse is facing in respect to the player
+			// Get the global mouse position and the direction of the mouse relative to the player
+			mousePos = GetGlobalMousePosition();
+			mouseDirection = (mousePos - GlobalPosition).Normalized();  
+
+			// Set the player's rotation
+			Rotation = mouseDirection.Angle();
+			// GD.Print(mouseDirection, Rotation);
 
 			// Left mouse button pressed - main attack
 			if (Input.IsMouseButtonPressed(MouseButton.Left)) {

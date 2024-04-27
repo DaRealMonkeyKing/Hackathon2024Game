@@ -19,7 +19,8 @@ public partial class PlayerCharacter : CharacterBody2D
 	private int dashAcceleration = -150;
 	private int dashSpeed = 3000;
 
-	private Vector2 mouse_loc_from_player, mouse_loc;
+	private Vector2 mousePos;
+	private Vector2 mouseDirection;
 
 	private int curInventoryItem = 0;
 	// private int inventorySize = 2;
@@ -49,25 +50,24 @@ public partial class PlayerCharacter : CharacterBody2D
 		else {
 			// Get movement input
 			Vector2 movementInput = Input.GetVector("ui_left", "ui_right", "ui_up", "ui_down");
-			// user isn't pressing any movement keys
+			// User isn't pressing any movement keys
 			if (movementInput == Vector2.Zero) {
 				currentVelocity = Vector2.Zero;
 			}
-			// user is moving, update player's direction and their velocity
+			// User is moving, update player's direction and their velocity
 			else {
 				playerDirection = movementInput; 
 				currentVelocity = playerDirection * speed;
 			}
+
+			mousePos = GetViewport().GetMousePosition();  // get mouse position based off viewport
+			mouseDirection = (mousePos - Position).Normalized();  // Get the direction the mouse is facing in respect to the player
 
 			// Left mouse button pressed - main attack
 			if (Input.IsMouseButtonPressed(MouseButton.Left)) {
 				GD.Print("Attack");
 			}
 
-
-			
-			mouse_loc = GetViewport().GetMousePosition(); // get mouse position based off viewport
-			mouse_loc_from_player = mouse_loc - Position; // get mouse distance from player
 		}
 
 	}

@@ -65,7 +65,7 @@ public partial class PlayerCharacter : CharacterBody2D
 			mouseDirection = (mousePos - GlobalPosition).Normalized();  
 
 			// Set the player's rotation
-			Rotation = mouseDirection.Angle();
+			// Rotation = mouseDirection.Angle();
 			// GD.Print(mouseDirection, Rotation);
 
 			// Left mouse button pressed - main attack

@@ -73,7 +73,6 @@ public partial class PlayerCharacter : CharacterBody2D
 		}
 
 	}
-
 	private void playerMovement() {
 		getInput();
 		blink();

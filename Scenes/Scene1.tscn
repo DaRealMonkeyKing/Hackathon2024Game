@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://dhtq1a1makslo"]
+
+[ext_resource type="Script" path="res://Scripts/PlayerCharacter.cs" id="2_mq2ui"]
+[ext_resource type="PackedScene" uid="uid://t2suv80gl4gd" path="res://Scenes/mob.tscn" id="3_tc3pt"]
+[ext_resource type="PackedScene" uid="uid://blpog3uvxeid5" path="res://Scenes/player_character.tscn" id="3_wuccs"]
+[ext_resource type="PackedScene" uid="uid://cm8gfxubygvbc" path="res://Scenes/ShootingMob.tscn" id="5_i0yqe"]
+
+[node name="Game" type="Node2D"]
+y_sort_enabled = true
+position = Vector2(-1, 0)
+
+[node name="PlayerCharacter" parent="." instance=ExtResource("3_wuccs")]
+position = Vector2(265, 176)
+platform_on_leave = 2
+platform_floor_layers = 4294901760
+script = ExtResource("2_mq2ui")
+playerDirection = Vector2(0, 0)
+
+[node name="Mob" parent="." instance=ExtResource("3_tc3pt")]
+position = Vector2(578, 312)
+platform_on_leave = 2
+platform_floor_layers = 4294901760
+
+[node name="ShootingMob" parent="." instance=ExtResource("5_i0yqe")]
+position = Vector2(116, 548)

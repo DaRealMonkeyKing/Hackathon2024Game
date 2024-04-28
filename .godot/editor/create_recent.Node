@@ -1,0 +1,11 @@
+Timer
+CollisionShape2D
+Area2D
+CharacterBody2D
+Marker2D
+Node2D
+Node
+VisibleOnScreenNotifier2D
+Sprite2D
+TrashEnemyFollow
+EnemyIdle

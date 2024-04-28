@@ -1,0 +1,4 @@
+res://Scripts/EnemyScripts/EnemyGun.gd
+res://Scripts/EnemyScripts/mob.gd
+res://Scripts/EnemyScripts/TrashEnemyShoot.gd
+res://Scripts/EnemyScripts/TrashEnemyIdle.gd

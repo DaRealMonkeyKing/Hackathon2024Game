@@ -1,0 +1,57 @@
+[gd_scene load_steps=9 format=3 uid="uid://t2suv80gl4gd"]
+
+[ext_resource type="Script" path="res://Scripts/EnemyScripts/mob.gd" id="1_w0fhj"]
+[ext_resource type="Texture2D" uid="uid://cha8rh3lswtxs" path="res://Images/trash.png" id="2_sqox2"]
+[ext_resource type="Script" path="res://States/StateMachine.gd" id="3_10j7o"]
+[ext_resource type="Script" path="res://Scripts/EnemyScripts/TrashEnemyIdle.gd" id="4_pv4pd"]
+[ext_resource type="Script" path="res://Scripts/EnemyScripts/TrashEnemyFollow.gd" id="5_pmw6y"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vvotp"]
+radius = 33.0606
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_68plf"]
+size = Vector2(99, 130)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0y1d5"]
+radius = 348.465
+
+[node name="Mob" type="CharacterBody2D"]
+script = ExtResource("1_w0fhj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 29)
+scale = Vector2(0.546875, 0.546875)
+texture = ExtResource("2_sqox2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4, 26)
+shape = SubResource("CircleShape2D_vvotp")
+
+[node name="Hitbox" type="Area2D" parent="."]
+
+[node name="HitboxSize" type="CollisionShape2D" parent="Hitbox"]
+position = Vector2(-5, -2)
+shape = SubResource("RectangleShape2D_68plf")
+
+[node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
+script = ExtResource("3_10j7o")
+initial_state = NodePath("TrashEnemyIdle")
+
+[node name="TrashEnemyIdle" type="Node" parent="StateMachine" node_paths=PackedStringArray("enemy")]
+script = ExtResource("4_pv4pd")
+enemy = NodePath("../..")
+
+[node name="TrashEnemyFollow" type="Node" parent="StateMachine" node_paths=PackedStringArray("enemy")]
+script = ExtResource("5_pmw6y")
+enemy = NodePath("../..")
+
+[node name="TrashEnemyShoot" type="Node" parent="StateMachine"]
+
+[node name="DetectionArea" type="Area2D" parent="."]
+
+[node name="Detection" type="CollisionShape2D" parent="DetectionArea"]
+position = Vector2(1, 1)
+shape = SubResource("CircleShape2D_0y1d5")
+
+[connection signal="body_entered" from="DetectionArea" to="StateMachine/TrashEnemyFollow" method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="DetectionArea" to="StateMachine/TrashEnemyFollow" method="_on_detection_area_body_exited"]

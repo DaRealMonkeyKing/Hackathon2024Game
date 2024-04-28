@@ -2,3 +2,13 @@ res://Scripts/EnemyScripts/EnemyGun.gd
 res://Scripts/EnemyScripts/mob.gd
 res://Scripts/EnemyScripts/TrashEnemyShoot.gd
 res://Scripts/EnemyScripts/TrashEnemyIdle.gd
+res://Scenes/Scene1.tscn
+res://Scripts/EnemyScripts/UI.tscn
+res://Scenes/player_character.tscn
+res://Scenes/mob.tscn
+res://Scenes/EnemyGun.tscn
+res://Scenes/ShootingMob.tscn
+res://Scenes/Bullet.tscn
+res://Scripts/Icon.cs
+res://Scripts/PlayerCharacter.cs
+res://Scripts/new_script.cs

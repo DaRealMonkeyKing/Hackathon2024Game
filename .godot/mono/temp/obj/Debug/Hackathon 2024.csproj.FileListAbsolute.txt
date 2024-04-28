@@ -50,3 +50,21 @@ C:\Users\16477\Desktop\hackathon24\.godot\mono\temp\obj\Debug\refint\Hackathon 2
 C:\Users\16477\Desktop\hackathon24\.godot\mono\temp\obj\Debug\Hackathon 2024.pdb
 C:\Users\16477\Desktop\hackathon24\.godot\mono\temp\obj\Debug\Hackathon 2024.genruntimeconfig.cache
 C:\Users\16477\Desktop\hackathon24\.godot\mono\temp\obj\Debug\ref\Hackathon 2024.dll
+C:\Users\niel2\Documents\Hackathon 2024\Hackathon2024GameV1\Hackathon2024Game\.godot\mono\temp\bin\Debug\Hackathon 2024.deps.json
+C:\Users\niel2\Documents\Hackathon 2024\Hackathon2024GameV1\Hackathon2024Game\.godot\mono\temp\bin\Debug\Hackathon 2024.runtimeconfig.json
+C:\Users\niel2\Documents\Hackathon 2024\Hackathon2024GameV1\Hackathon2024Game\.godot\mono\temp\bin\Debug\Hackathon 2024.dll
+C:\Users\niel2\Documents\Hackathon 2024\Hackathon2024GameV1\Hackathon2024Game\.godot\mono\temp\bin\Debug\Hackathon 2024.pdb
+C:\Users\niel2\Documents\Hackathon 2024\Hackathon2024GameV1\Hackathon2024Game\.godot\mono\temp\bin\Debug\GodotSharp.dll
+C:\Users\niel2\Documents\Hackathon 2024\Hackathon2024GameV1\Hackathon2024Game\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+C:\Users\niel2\Documents\Hackathon 2024\Hackathon2024GameV1\Hackathon2024Game\.godot\mono\temp\obj\Debug\Hackathon 2024.csproj.AssemblyReference.cache
+C:\Users\niel2\Documents\Hackathon 2024\Hackathon2024GameV1\Hackathon2024Game\.godot\mono\temp\obj\Debug\Hackathon 2024.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\niel2\Documents\Hackathon 2024\Hackathon2024GameV1\Hackathon2024Game\.godot\mono\temp\obj\Debug\Hackathon 2024.AssemblyInfoInputs.cache
+C:\Users\niel2\Documents\Hackathon 2024\Hackathon2024GameV1\Hackathon2024Game\.godot\mono\temp\obj\Debug\Hackathon 2024.AssemblyInfo.cs
+C:\Users\niel2\Documents\Hackathon 2024\Hackathon2024GameV1\Hackathon2024Game\.godot\mono\temp\obj\Debug\Hackathon 2024.csproj.CoreCompileInputs.cache
+C:\Users\niel2\Documents\Hackathon 2024\Hackathon2024GameV1\Hackathon2024Game\.godot\mono\temp\obj\Debug\Hackathon 2024.sourcelink.json
+C:\Users\niel2\Documents\Hackathon 2024\Hackathon2024GameV1\Hackathon2024Game\.godot\mono\temp\obj\Debug\Hackatho.99267F9A.Up2Date
+C:\Users\niel2\Documents\Hackathon 2024\Hackathon2024GameV1\Hackathon2024Game\.godot\mono\temp\obj\Debug\Hackathon 2024.dll
+C:\Users\niel2\Documents\Hackathon 2024\Hackathon2024GameV1\Hackathon2024Game\.godot\mono\temp\obj\Debug\refint\Hackathon 2024.dll
+C:\Users\niel2\Documents\Hackathon 2024\Hackathon2024GameV1\Hackathon2024Game\.godot\mono\temp\obj\Debug\Hackathon 2024.pdb
+C:\Users\niel2\Documents\Hackathon 2024\Hackathon2024GameV1\Hackathon2024Game\.godot\mono\temp\obj\Debug\Hackathon 2024.genruntimeconfig.cache
+C:\Users\niel2\Documents\Hackathon 2024\Hackathon2024GameV1\Hackathon2024Game\.godot\mono\temp\obj\Debug\ref\Hackathon 2024.dll

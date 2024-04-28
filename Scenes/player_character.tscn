@@ -6,8 +6,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wgpyk"]
 size = Vector2(80, 80)
 
-[node name="PlayerCharacter" type="CharacterBody2D"]
+[node name="PlayerCharacter" type="CharacterBody2D" groups=["Player"]]
 position = Vector2(0, 1)
+collision_layer = 2
 script = ExtResource("1_pgehr")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

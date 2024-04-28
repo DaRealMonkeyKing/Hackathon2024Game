@@ -1,7 +1,9 @@
 res://Scenes/Scene1.tscn
-res://Scripts/PlayerCharacter.cs
+res://Slots.gd
 res://Scenes/UI.tscn
-res://Scenes/player_character.tscn
 res://Scenes/mob.tscn
-res://Scripts/new_script.cs
-res://Scripts/Icon.cs
+res://item.tscn
+res://inventory.tscn
+res://Items.gd
+res://Item.gd
+res://Scenes/inventory.tscn

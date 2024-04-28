@@ -1,9 +1,14 @@
+TextureRect
+Label
+HBoxContainer
+Sprite2D
+VBoxContainer
+PanelContainer
+AnimationPlayer
 TileMap
 ParallaxLayer
 Node
 ParallaxBackground
-TextureRect
 Camera2D
 CollisionShape2D
-Sprite2D
 CharacterBody2D

@@ -1,13 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://t2suv80gl4gd"]
+[gd_scene load_steps=7 format=3 uid="uid://t2suv80gl4gd"]
 
-[ext_resource type="Script" path="res://Scripts/mob.gd" id="1_e67ot"]
+[ext_resource type="Script" path="res://Scripts/EnemyScripts/mob.gd" id="1_dp0dc"]
 [ext_resource type="Texture2D" uid="uid://cha8rh3lswtxs" path="res://Images/trash.png" id="2_sqox2"]
+[ext_resource type="Script" path="res://States/StateMachine.gd" id="3_tke4d"]
+[ext_resource type="Script" path="res://Scripts/EnemyScripts/TrashEnemyIdle.gd" id="4_kb4a6"]
+[ext_resource type="Script" path="res://Scripts/EnemyScripts/TrashEnemyFollow.gd" id="5_cawqs"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vvotp"]
 radius = 33.0606
 
 [node name="Mob" type="CharacterBody2D"]
-script = ExtResource("1_e67ot")
+script = ExtResource("1_dp0dc")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, 29)
@@ -17,3 +20,15 @@ texture = ExtResource("2_sqox2")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-4, 26)
 shape = SubResource("CircleShape2D_vvotp")
+
+[node name="State Machine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
+script = ExtResource("3_tke4d")
+initial_state = NodePath("TrashEnemyIdle")
+
+[node name="TrashEnemyIdle" type="Node" parent="State Machine" node_paths=PackedStringArray("enemy")]
+script = ExtResource("4_kb4a6")
+enemy = NodePath("../..")
+
+[node name="TrashEnemyFollow" type="Node" parent="State Machine" node_paths=PackedStringArray("enemy")]
+script = ExtResource("5_cawqs")
+enemy = NodePath("../..")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://dhtq1a1makslo"]
+[gd_scene load_steps=25 format=3 uid="uid://dhtq1a1makslo"]
 
 [ext_resource type="Texture2D" uid="uid://c6ww0o7agr0xb" path="res://Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Fences.png" id="1_bvko3"]
 [ext_resource type="Script" path="res://Scripts/PlayerCharacter.cs" id="2_mq2ui"]
@@ -11,34 +11,35 @@
 [ext_resource type="PackedScene" uid="uid://ccda3jyw874uk" path="res://Scenes/inventory.tscn" id="5_nn7uf"]
 [ext_resource type="Texture2D" uid="uid://cc8nrwsmxpkc5" path="res://Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png" id="5_p8nyx"]
 [ext_resource type="Texture2D" uid="uid://bg88kje6rak6a" path="res://Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Wooden House.png" id="6_o8e7o"]
-[ext_resource type="PackedScene" path="res://Scenes/ShootingMob.tscn" id="6_s038a"]
+[ext_resource type="PackedScene" uid="uid://b4b0hjdysfm0i" path="res://Scenes/ShootingMob.tscn" id="6_s038a"]
+[ext_resource type="PackedScene" uid="uid://cvaio1ufe2o66" path="res://Scenes/loot.tscn" id="13_abchn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5tgq1"]
 texture = ExtResource("1_bvko3")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3, -8, 3.25, -8, 3.375, 8, -4, 8, -3.25, 8)
 1:0/0 = 0
 1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:0/0/physics_layer_0/angular_velocity = 0.0
-1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3.25, -7, -3.25, 8, -3, 8, 8, 8, 8, -6.875)
 2:0/0 = 0
 2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:0/0/physics_layer_0/angular_velocity = 0.0
-2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -6.875, 8, -6.75, 8, 8, -8, 8)
 3:0/0 = 0
 3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:0/0/physics_layer_0/angular_velocity = 0.0
-3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -7, 3.25, -7, 3.125, 8, -8, 8)
 0:1/0 = 0
 0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:1/0/physics_layer_0/angular_velocity = 0.0
-0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3, -8, 3.25, -8, 3.375, 8, -4, 8, -3.25, 8)
 1:1/0 = 0
 1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:1/0/physics_layer_0/angular_velocity = 0.0
-1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3, -8, 8, -8, 8, 8, -3.375, 8)
 2:1/0 = 0
 2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:1/0/physics_layer_0/angular_velocity = 0.0
@@ -46,39 +47,39 @@ texture = ExtResource("1_bvko3")
 3:1/0 = 0
 3:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:1/0/physics_layer_0/angular_velocity = 0.0
-3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 3, -8, 3.125, 8, -8, 8)
 0:2/0 = 0
 0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:2/0/physics_layer_0/angular_velocity = 0.0
-0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3, -8, 3.25, -8, 3.375, 8, -4, 8, -3.25, 8)
 1:2/0 = 0
 1:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:2/0/physics_layer_0/angular_velocity = 0.0
-1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3.5, -8, 8, -8, 8, 3.75, -3.75, 4)
 2:2/0 = 0
 2:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:2/0/physics_layer_0/angular_velocity = 0.0
-2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 3.75, -8, 3.75)
 3:2/0 = 0
 3:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:2/0/physics_layer_0/angular_velocity = 0.0
-3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 3.5, -8, -8, 3.75, -8, 4, 3.75)
 0:3/0 = 0
 0:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:3/0/physics_layer_0/angular_velocity = 0.0
-0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3, -8, 3.25, -8, 3.375, 8, -4, 8, -3.25, 8)
 1:3/0 = 0
 1:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:3/0/physics_layer_0/angular_velocity = 0.0
-1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-3.5, -8, 8, -8, 8, 4.5, -3.375, 4.5)
 2:3/0 = 0
 2:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:3/0/physics_layer_0/angular_velocity = 0.0
-2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 4.5, -8, 4.375)
 3:3/0 = 0
 3:3/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:3/0/physics_layer_0/angular_velocity = 0.0
-3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 3.25, -8, 3, 4.25, -8, 4.375)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hrha4"]
 texture = ExtResource("2_wo7bc")
@@ -1451,7 +1452,7 @@ layer_1/z_index = 1
 layer_1/tile_data = PackedInt32Array(2752495, 65541, 2, 2752496, 65541, 2, 2752497, 65541, 2, 2818031, 65541, 2, 2818032, 65541, 2, 2818033, 65541, 2, 2686959, 65541, 2, 2686961, 65541, 2)
 layer_2/name = "walls"
 layer_2/z_index = 2
-layer_2/tile_data = PackedInt32Array(2818031, 65541, 3, 2818033, 65541, 3, 2818032, 65541, 0, 2818030, 5, 3, 2752494, 5, 2, 2818034, 131077, 3, 2752498, 131077, 2, 2686958, 5, 1, 2686959, 65541, 1, 2686960, 196613, 1, 2686961, 65541, 1, 2686962, 131077, 1)
+layer_2/tile_data = PackedInt32Array(2818031, 65541, 3, 2818033, 65541, 3, 2818032, 196613, 1, 2818030, 5, 3, 2752494, 5, 2, 2818034, 131077, 3, 2752498, 131077, 2, 2686958, 5, 1, 2686959, 65541, 1, 2686960, 65541, 0, 2686961, 65541, 1, 2686962, 131077, 1)
 layer_3/name = "roof"
 layer_3/z_index = 3
 layer_3/tile_data = PackedInt32Array()
@@ -1468,6 +1469,15 @@ layer_1/tile_data = PackedInt32Array(0, 393216, 1, 1, 393216, 1, 2, 393216, 1, 3
 layer_2/name = "trees"
 layer_2/tile_data = PackedInt32Array(-9, 589824, 3, 65527, 589824, 3, 131062, 589824, 3, 196598, 589824, 3, 262134, 589824, 3, 327670, 589824, 3, 393206, 589824, 3, 458743, 589824, 3, 524280, 589824, 3, 589816, 589824, 3, 655353, 589824, 3, 720889, 589824, 3, 131063, 589824, 3, -8, 589824, 3, -65544, 589824, 3, -131080, 589824, 3, -131079, 589824, 3, -196615, 589824, 3, -262151, 589824, 3, -327687, 589824, 3, -327686, 589824, 3, -393222, 589824, 3, -393221, 589824, 3)
 
+[node name="Mob" parent="." instance=ExtResource("3_tc3pt")]
+position = Vector2(-228, 227)
+platform_on_leave = 2
+platform_floor_layers = 4294901760
+
+[node name="ShootingMob" parent="." instance=ExtResource("6_s038a")]
+z_index = 1
+position = Vector2(231, -307)
+
 [node name="PlayerCharacter" parent="." instance=ExtResource("3_wuccs")]
 position = Vector2(308, 128)
 platform_on_leave = 2
@@ -1479,18 +1489,13 @@ playerDirection = Vector2(0, 0)
 position = Vector2(4, 2)
 
 [node name="Inventory" parent="PlayerCharacter" instance=ExtResource("5_nn7uf")]
+z_index = 10
 position = Vector2(-254, 609)
-
-[node name="Mob" parent="." instance=ExtResource("3_tc3pt")]
-position = Vector2(-228, 227)
-platform_on_leave = 2
-platform_floor_layers = 4294901760
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_qh8kn")
 }
 
-[node name="ShootingMob" parent="." instance=ExtResource("6_s038a")]
-z_index = 1
-position = Vector2(231, -307)
+[node name="Loot" parent="." instance=ExtResource("13_abchn")]
+position = Vector2(0, -2)

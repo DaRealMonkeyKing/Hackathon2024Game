@@ -8,7 +8,9 @@ extends HBoxContainer
 
 const TEXTURES = [
 	preload(\"res://Images/stick.png\"),
-	preload(\"res://Images/healthpot.png\")
+	preload(\"res://Images/healthpot.png\"),
+	preload(\"res://Images/recycling_bin.png\"),
+	preload(\"res://Images/lootdrops.png\")
 ]
 
 var item_list : Array
@@ -33,6 +35,8 @@ func _add_item(id : int):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	# TODO: signal is not connected to the one in the other thing rn
+	connect(\"picked_up_item\", _add_item)
 	#for i in range(get_child_count()):
 		#item_list.append(get_child(i))
 	

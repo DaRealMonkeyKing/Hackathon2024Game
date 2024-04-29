@@ -15,14 +15,11 @@ public partial class PlayerCharacter : CharacterBody2D
 	private bool dashing = false;
 	private int dashAcceleration = -150;
 	private int dashSpeed = 3000;
+	// private int dashCooldown = 5;
 
 	private Vector2 mousePos;
 	private Vector2 mouseDirection;
 
-	private int curInventoryItem = 0;
-	// private int inventorySize = 2;
-	// private string[] playerInventory = new string[2];   // TODO: maybe create a item class or something or maybe should only store weapons?
-	// playerInventory[0] = "fists";
 	public override void _PhysicsProcess(double delta)
 	{
 		base._PhysicsProcess(delta);

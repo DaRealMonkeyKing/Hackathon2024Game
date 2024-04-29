@@ -1,6 +1,8 @@
+TextureRect
+CollisionShape2D
+Area2D
 TileMap
 Node
-TextureRect
 Label
 HBoxContainer
 Sprite2D
@@ -10,5 +12,3 @@ AnimationPlayer
 ParallaxLayer
 ParallaxBackground
 Camera2D
-CollisionShape2D
-CharacterBody2D

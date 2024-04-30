@@ -1476,7 +1476,7 @@ platform_floor_layers = 4294901760
 
 [node name="ShootingMob" parent="." instance=ExtResource("6_s038a")]
 z_index = 1
-position = Vector2(231, -307)
+position = Vector2(574, -318)
 
 [node name="PlayerCharacter" parent="." instance=ExtResource("3_wuccs")]
 position = Vector2(308, 128)

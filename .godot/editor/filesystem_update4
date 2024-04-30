@@ -1,11 +1,7 @@
 res://Scenes/Scene1.tscn
+res://Scripts/Area2D.gd
+res://Scripts/SignalManager.gd
+res://Scripts/Items.gd
 res://Scenes/inventory.tscn
 res://Scenes/UI.tscn
-res://Scenes/ShootingMob.tscn
 res://Scenes/loot.tscn
-res://Scenes/EnemyGun.tscn
-res://Scenes/player_character.tscn
-res://Scripts/Area2D.gd
-res://Scripts/EnemyScripts/TrashEnemyFollow.gd
-res://Scenes/mob.tscn
-res://Scripts/Slots.gd

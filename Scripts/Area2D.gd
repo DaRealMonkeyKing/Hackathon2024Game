@@ -1,7 +1,6 @@
 extends Area2D
 
 
-signal picked_up_item(id)
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	connect("body_entered", good_name)
@@ -17,8 +16,7 @@ func good_name(body):
 	print(body.name)
 	if body.name != "PlayerCharacter":
 		return
-	emit_signal("picked_up_item", 3)
-	print("signal emited")
+	SignalManager.picked_up_item.emit(3)
 	queue_free()
 	
 

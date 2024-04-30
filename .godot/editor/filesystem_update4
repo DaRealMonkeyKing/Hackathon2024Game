@@ -5,3 +5,5 @@ res://Scripts/Items.gd
 res://Scenes/inventory.tscn
 res://Scenes/UI.tscn
 res://Scenes/loot.tscn
+res://Scenes/ShootingMob.tscn
+res://Scenes/mob.tscn

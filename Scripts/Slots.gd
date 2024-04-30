@@ -1,7 +1,8 @@
 @tool
 extends HBoxContainer
 
-class_name Slots
+const texture_selected = preload("res://Images/inventoryslotselected.png")
+const texture_unselected = preload("res://Images/inventoryslot.png")
 
 const NUM_SLOTS : int = 5
 static var selected_slot : int = 0
@@ -9,21 +10,18 @@ var child_list : Array
 
 
 func _create_slot_texture_rect(is_selected):
-	var img = Image.new()
-	if (is_selected):
-		img.load("res://Images/inventoryslotselected.png")
-	else:
-		img.load("res://Images/inventoryslot.png")
-	var texture = ImageTexture.new().create_from_image(img)
 	var texture_rect = TextureRect.new()
-	texture_rect.texture = texture
+	if (is_selected):
+		texture_rect.texture = texture_selected
+	else:
+		texture_rect.texture = texture_unselected
 	return texture_rect
 
 
-func _swap_textures(old, new):
-	var tmp = old.texture
-	old.texture = new.texture
-	new.texture = tmp
+func _swap_textures(a, b):
+	var tmp = a.texture
+	a.texture = b.texture
+	b.texture = tmp
 	
 	
 # Called when the node enters the scene tree for the first time.

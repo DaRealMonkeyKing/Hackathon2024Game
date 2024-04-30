@@ -8,7 +8,7 @@ size = Vector2(80, 80)
 
 [node name="PlayerCharacter" type="CharacterBody2D" groups=["Player"]]
 position = Vector2(0, 1)
-collision_layer = 2
+collision_layer = 255
 script = ExtResource("1_pgehr")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

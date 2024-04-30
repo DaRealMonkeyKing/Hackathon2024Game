@@ -5,13 +5,13 @@ signal Transitioned # if leaving state, call this signal
 
 
 func Enter(): # work to do when entering
-    pass
+	pass
 
 func Exit(): # work to do when exiting
-    pass
+	pass
 
 func Update(_delta: float): # update
-    pass
+	pass
 
 func Physics_Update(_delta: float):
-    pass
+	pass

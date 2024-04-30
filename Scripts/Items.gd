@@ -3,21 +3,12 @@ extends HBoxContainer
 
 const TEXTURES = [
 	preload("res://Images/stick.png"),
-	preload("res://Images/healthpot.png")
+	preload("res://Images/healthpot.png"),
+	preload("res://Images/recycling_bin.png"),
+	preload("res://Images/lootdrops.png")
 ]
 
 var item_list : Array
-
-# func _create_slot_texture_rect(is_selected):
-# 	var img = Image.new()
-# 	if (is_selected):
-# 		img.load("res://Images/inventoryslotselected.png")
-# 	else:
-# 		img.load("res://Images/inventoryslot.png")
-# 	var texture = ImageTexture.new().create_from_image(img)
-# 	var texture_rect = TextureRect.new()
-# 	texture_rect.texture = texture
-# 	return texture_rect
 
 func _add_item(id : int):
 	var texture_rect = TextureRect.new()
@@ -28,12 +19,14 @@ func _add_item(id : int):
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	# TODO: signal is not connected to the one in the other thing rn
+	SignalManager.picked_up_item.connect(_add_item)
 	#for i in range(get_child_count()):
 		#item_list.append(get_child(i))
 	
 	_add_item(0)
 	_add_item(1)
-	_add_item(0)
+	_add_item(2)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

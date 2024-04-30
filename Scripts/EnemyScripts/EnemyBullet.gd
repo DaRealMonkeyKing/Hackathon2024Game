@@ -4,7 +4,7 @@ var travelled_distance = 0
 var BULLET_DMG = 10
 
 func _physics_process(delta):
-    const SPEED = 1000
+    const SPEED = 5000
     const RANGE = 2000
     var direction = Vector2.RIGHT.rotated(rotation) # gets the direction the bullet is pointing
     position += direction * SPEED * delta # bullets are time dependant rather than frame dependant

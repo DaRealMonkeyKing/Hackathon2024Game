@@ -27,7 +27,7 @@ position = Vector2(84.3374, -4.51807)
 scale = Vector2(1.50602, 1.50602)
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 0.15
+wait_time = 3.0
 autostart = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

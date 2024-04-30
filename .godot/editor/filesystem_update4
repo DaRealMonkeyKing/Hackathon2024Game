@@ -22,3 +22,4 @@ res://States/StateMachine.gd
 res://Scripts/EnemyScripts/EnemyGun.gd
 res://Scripts/EnemyScripts/EnemyBullet.gd
 res://Scripts/Area2D.gd
+res://Scenes/Bullet.tscn

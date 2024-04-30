@@ -15,10 +15,6 @@ run/main_scene="res://Scenes/Scene1.tscn"
 config/features=PackedStringArray("4.2", "C#", "Forward Plus")
 config/icon="res://Images/icon.svg"
 
-[autoload]
-
-SignalManager="*res://Scripts/SignalManager.gd"
-
 [display]
 
 window/size/mode=2

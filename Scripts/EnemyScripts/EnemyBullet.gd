@@ -1,6 +1,7 @@
 extends Area2D
 
 var travelled_distance = 0
+var BULLET_DMG = 10
 
 func _physics_process(delta):
     const SPEED = 1000
@@ -16,4 +17,4 @@ func _physics_process(delta):
 func _on_body_entered(body:Node2D):
     queue_free()
     if body.has_method("take_damage"):
-        pass
+        body.take_damage(BULLET_DMG)

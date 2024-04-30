@@ -1,8 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://b4b0hjdysfm0i"]
+[gd_scene load_steps=5 format=3 uid="uid://opgkxoicaht8"]
 
 [ext_resource type="Texture2D" uid="uid://cha8rh3lswtxs" path="res://Images/trash.png" id="1_74acs"]
 [ext_resource type="Script" path="res://Scripts/EnemyScripts/ShootingMobMovement.gd" id="1_a7aw0"]
-[ext_resource type="PackedScene" uid="uid://ccvu8a25jk64m" path="res://Scenes/EnemyGun.tscn" id="2_0rg22"]
+[ext_resource type="PackedScene" uid="uid://dnybjlvofrjy1" path="res://Scenes/EnemyGun.tscn" id="2_0rg22"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_f2jid"]
 radius = 31.0644

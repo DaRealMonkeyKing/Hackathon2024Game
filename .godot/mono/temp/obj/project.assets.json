@@ -20,24 +20,19 @@
             "related": ".xml"
           }
         }
-      }
-    },
-    "net6.0/win-x64": {
-      "Godot.SourceGenerators/4.2.2": {
-        "type": "package",
-        "build": {
-          "build/Godot.SourceGenerators.props": {}
-        }
       },
-      "GodotSharp/4.2.2": {
+      "GodotSharpEditor/4.2.2": {
         "type": "package",
+        "dependencies": {
+          "GodotSharp": "4.2.2"
+        },
         "compile": {
-          "lib/net6.0/GodotSharp.dll": {
+          "lib/net6.0/GodotSharpEditor.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/GodotSharp.dll": {
+          "lib/net6.0/GodotSharpEditor.dll": {
             "related": ".xml"
           }
         }
@@ -70,32 +65,46 @@
         "lib/net6.0/GodotSharp.dll",
         "lib/net6.0/GodotSharp.xml"
       ]
+    },
+    "GodotSharpEditor/4.2.2": {
+      "sha512": "nNXntakfzSuH5AnQKBpznN8pF+3uYj9XmGIEMeR+6GOzg8gxx2b09bhVZm3q6onzldPEoo1YChBRL1zWWjOM6Q==",
+      "type": "package",
+      "path": "godotsharpeditor/4.2.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "godotsharpeditor.4.2.2.nupkg.sha512",
+        "godotsharpeditor.nuspec",
+        "lib/net6.0/GodotSharpEditor.dll",
+        "lib/net6.0/GodotSharpEditor.xml"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Godot.SourceGenerators >= 4.2.2",
-      "GodotSharp >= 4.2.2"
+      "GodotSharp >= 4.2.2",
+      "GodotSharpEditor >= 4.2.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\16477\\.nuget\\packages\\": {},
+    "C:\\Users\\niel2\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\16477\\Desktop\\hackathon24\\Hackathon 2024.csproj",
+      "projectUniqueName": "C:\\Users\\niel2\\Documents\\Hackathon 2024\\Hackathon2024GameV1\\Hackathon2024Game\\Hackathon 2024.csproj",
       "projectName": "Hackathon 2024",
-      "projectPath": "C:\\Users\\16477\\Desktop\\hackathon24\\Hackathon 2024.csproj",
-      "packagesPath": "C:\\Users\\16477\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\16477\\Desktop\\hackathon24\\.godot\\mono\\temp\\obj\\",
+      "projectPath": "C:\\Users\\niel2\\Documents\\Hackathon 2024\\Hackathon2024GameV1\\Hackathon2024Game\\Hackathon 2024.csproj",
+      "packagesPath": "C:\\Users\\niel2\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\niel2\\Documents\\Hackathon 2024\\Hackathon2024GameV1\\Hackathon2024Game\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\16477\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\niel2\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -104,7 +113,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -117,6 +125,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -128,6 +141,10 @@
             "version": "[4.2.2, )"
           },
           "GodotSharp": {
+            "target": "Package",
+            "version": "[4.2.2, )"
+          },
+          "GodotSharpEditor": {
             "target": "Package",
             "version": "[4.2.2, )"
           }
@@ -143,31 +160,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-            "version": "[6.0.8, 6.0.8]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Runtime.win-x64",
-            "version": "[6.0.8, 6.0.8]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-            "version": "[6.0.8, 6.0.8]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
-      }
-    },
-    "runtimes": {
-      "win-x64": {
-        "#import": []
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

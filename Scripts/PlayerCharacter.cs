@@ -83,4 +83,17 @@ public partial class PlayerCharacter : CharacterBody2D
 			dashing = true;
 		}
 	}
+
+	private void take_damage(int damage) {
+		// GD.Print("ouch");
+
+		// if (hpBar.Value > 0 && health > 0) {
+		// 	health -= damage;
+		// 	hpBar.Value -= damage; 
+		// }
+
+		// if (health == 0) {
+		// 	GD.Print("i died");
+		// }
+	}
 }

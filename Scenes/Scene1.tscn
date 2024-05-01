@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://dhtq1a1makslo"]
+[gd_scene load_steps=11 format=3 uid="uid://dhtq1a1makslo"]
 
 [ext_resource type="PackedScene" uid="uid://t2suv80gl4gd" path="res://Scenes/mob.tscn" id="3_tc3pt"]
 [ext_resource type="PackedScene" uid="uid://blpog3uvxeid5" path="res://Scenes/player_character.tscn" id="3_wuccs"]
 [ext_resource type="Texture2D" uid="uid://b42gqq5w41khe" path="res://kenney_map-pack/Tilesheet/mapPack_tilesheet.png" id="4_5y2yw"]
 [ext_resource type="PackedScene" uid="uid://ccda3jyw874uk" path="res://Scenes/inventory.tscn" id="5_nn7uf"]
 [ext_resource type="PackedScene" uid="uid://opgkxoicaht8" path="res://Scenes/ShootingMob.tscn" id="6_s038a"]
+[ext_resource type="PackedScene" uid="uid://cvaio1ufe2o66" path="res://Scenes/loot.tscn" id="6_vro74"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jvtr7"]
 resource_name = "Terrain"
@@ -636,3 +637,5 @@ libraries = {
 
 [node name="ShootingMob" parent="." instance=ExtResource("6_s038a")]
 position = Vector2(1005, -475)
+
+[node name="Loot" parent="." instance=ExtResource("6_vro74")]

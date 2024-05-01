@@ -1,13 +1,1 @@
 res://Scenes/Scene1.tscn
-res://Scripts/EnemyScripts/EnemyBullet.gd
-res://Scenes/UI.tscn
-res://Scenes/inventory.tscn
-res://Scenes/ShootingMob.tscn
-res://Scenes/EnemyGun.tscn
-res://Scenes/player_character.tscn
-res://Scenes/mob.tscn
-res://Scenes/Bullet.tscn
-res://Scripts/new_script.cs
-res://Scripts/PlayerCharacter.cs
-res://Scripts/Icon.cs
-res://Scripts/SignalManager.gd

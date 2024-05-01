@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://ccda3jyw874uk"]
 
 [ext_resource type="Script" path="res://Scripts/Slots.gd" id="1_gjj5e"]
-[ext_resource type="Script" path="res://Scripts/Items.gd" id="2_tkfvm"]
+[ext_resource type="Script" path="res://Scripts/Items.gd" id="2_q6kxf"]
 
 [node name="Inventory" type="Node2D"]
 
@@ -15,4 +15,4 @@ offset_left = 2.0
 offset_top = 3.0
 offset_right = 510.0
 offset_bottom = 93.0
-script = ExtResource("2_tkfvm")
+script = ExtResource("2_q6kxf")

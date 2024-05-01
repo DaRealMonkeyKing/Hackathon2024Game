@@ -1,7 +1,5 @@
 using Godot;
 using System;
-using System.Runtime.CompilerServices;
-using System.Runtime.ConstrainedExecution;
 
 namespace Godot;
 
@@ -21,9 +19,6 @@ public partial class PlayerCharacter : CharacterBody2D
 
 	private Vector2 mousePos;
 	private Vector2 mouseDirection;
-	private const int MAX_HP = 100;
-	private int health = MAX_HP;
-	private ProgressBar hpBar;
 
 	public override void _PhysicsProcess(double delta)
 	{
@@ -32,13 +27,7 @@ public partial class PlayerCharacter : CharacterBody2D
 		playerMovement();
 	}
 
-    public override void _Ready()
-    {
-        hpBar = GetNode<ProgressBar>("HealthBar");
-		hpBar.Value = MAX_HP;
-    }
-
-    private void getInput() {
+	private void getInput() {
 		if (dashing) {
 			// stops the dash
 			if (currentVelocity.DistanceTo(Vector2.Zero) < Math.Abs(dashAcceleration)) {
@@ -92,19 +81,6 @@ public partial class PlayerCharacter : CharacterBody2D
 		if (Input.IsActionJustReleased("space")) {
 			currentVelocity = playerDirection * dashSpeed;
 			dashing = true;
-		}
-	}
-
-	private void take_damage(int damage) {
-		GD.Print("ouch");
-
-		if (hpBar.Value > 0 && health > 0) {
-			health -= damage;
-			hpBar.Value -= damage; 
-		}
-
-		if (health == 0) {
-			GD.Print("i died");
 		}
 	}
 }

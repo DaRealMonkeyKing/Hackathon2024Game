@@ -19,6 +19,9 @@ public partial class PlayerCharacter : CharacterBody2D
 
 	private Vector2 mousePos;
 	private Vector2 mouseDirection;
+	private const int MAX_HP = 100;
+	private int health = MAX_HP;
+	private ProgressBar hpBar;
 
 	public override void _PhysicsProcess(double delta)
 	{
@@ -26,6 +29,12 @@ public partial class PlayerCharacter : CharacterBody2D
 
 		playerMovement();
 	}
+
+	public override void _Ready()
+    {
+        hpBar = GetNode<ProgressBar>("HealthBar");
+		hpBar.Value = MAX_HP;
+    }
 
 	private void getInput() {
 		if (dashing) {
@@ -85,15 +94,15 @@ public partial class PlayerCharacter : CharacterBody2D
 	}
 
 	private void take_damage(int damage) {
-		// GD.Print("ouch");
+		GD.Print("ouch");
 
-		// if (hpBar.Value > 0 && health > 0) {
-		// 	health -= damage;
-		// 	hpBar.Value -= damage; 
-		// }
+		if (hpBar.Value > 0 && health > 0) {
+			health -= damage;
+			hpBar.Value -= damage; 
+		}
 
-		// if (health == 0) {
-		// 	GD.Print("i died");
-		// }
+		if (health <= 0) {
+			GD.Print("i died");
+		}
 	}
 }

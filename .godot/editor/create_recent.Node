@@ -1,3 +1,4 @@
+RichTextLabel
 Marker2D
 ProgressBar
 TextureRect
@@ -11,4 +12,3 @@ Sprite2D
 VBoxContainer
 PanelContainer
 AnimationPlayer
-ParallaxLayer

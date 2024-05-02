@@ -1,11 +1,10 @@
-@tool
 extends HBoxContainer
 
 const texture_selected = preload("res://Images/inventoryslotselected.png")
 const texture_unselected = preload("res://Images/inventoryslot.png")
 
-const NUM_SLOTS : int = 5
-static var selected_slot : int = 0
+#const NUM_SLOTS : int = 5
+#static var selected_slot : int = 0
 var child_list : Array
 
 
@@ -26,9 +25,9 @@ func _swap_textures(a, b):
 	
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	for i in range(NUM_SLOTS):
+	for i in range(InventoryManager.NUM_SLOTS):
 		var child
-		if i == selected_slot:
+		if i == InventoryManager.selected_slot:
 			child = _create_slot_texture_rect(true)
 		else:
 			child = _create_slot_texture_rect(false)
@@ -38,16 +37,16 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	var prev_selected = selected_slot
+	var prev_selected = InventoryManager.selected_slot
 	if Input.is_key_pressed(KEY_1):
-		selected_slot = 0
+		InventoryManager.selected_slot = 0
 	elif Input.is_key_pressed(KEY_2):
-		selected_slot = 1
+		InventoryManager.selected_slot = 1
 	elif Input.is_key_pressed(KEY_3):
-		selected_slot = 2
+		InventoryManager.selected_slot = 2
 	elif Input.is_key_pressed(KEY_4):
-		selected_slot = 3
+		InventoryManager.selected_slot = 3
 	elif Input.is_key_pressed(KEY_5):
-		selected_slot = 4
-	if prev_selected != selected_slot:
-		_swap_textures(child_list[prev_selected], child_list[selected_slot])
+		InventoryManager.selected_slot = 4
+	if prev_selected != InventoryManager.selected_slot:
+		_swap_textures(child_list[prev_selected], child_list[InventoryManager.selected_slot])

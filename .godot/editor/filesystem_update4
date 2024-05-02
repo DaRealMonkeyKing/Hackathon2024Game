@@ -1,5 +1,5 @@
-res://Scripts/EnemyScripts/EnemyGun.gd
 res://Scenes/Scene1.tscn
+res://Scripts/recycling_menu.gd
 res://Scenes/UI.tscn
 res://Scenes/ShootingMob.tscn
 res://Scenes/EnemyGun.tscn
@@ -7,3 +7,5 @@ res://Scenes/player_character.tscn
 res://Scenes/mob.tscn
 res://Scenes/Bullet.tscn
 res://Scenes/loot.tscn
+res://Scenes/inventory.tscn
+res://Scenes/recycling_menu.tscn

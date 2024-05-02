@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cvaio1ufe2o66"]
 
-[ext_resource type="Script" path="res://Scripts/Area2D.gd" id="2_bpxv4"]
+[ext_resource type="Script" path="res://Scripts/LootArea2D.gd" id="1_apf1p"]
 [ext_resource type="Texture2D" uid="uid://cxt0voc410mqr" path="res://Images/lootdrops.png" id="2_ixstx"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_68sss"]
@@ -9,7 +9,7 @@
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 7
-script = ExtResource("2_bpxv4")
+script = ExtResource("1_apf1p")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 scale = Vector2(3.5, 3.5)

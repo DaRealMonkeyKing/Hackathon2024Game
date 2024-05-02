@@ -14,6 +14,16 @@ func shoot():
 	new_bullet.global_rotation = %ShootingPoint.global_rotation # spawns bullet at shooting pos
 	%ShootingPoint.add_child(new_bullet)
 
+	var new_bullet2 = BULLET.instantiate()
+	new_bullet2.global_position = %ShootingPoint2.global_position # spawns bullet at shooting pos
+	new_bullet2.global_rotation = %ShootingPoint2.global_rotation # spawns bullet at shooting pos
+	%ShootingPoint2.add_child(new_bullet2)
+
+	var new_bullet3 = BULLET.instantiate()
+	new_bullet3.global_position = %ShootingPoint3.global_position # spawns bullet at shooting pos
+	new_bullet3.global_rotation = %ShootingPoint3.global_rotation # spawns bullet at shooting pos
+	%ShootingPoint3.add_child(new_bullet3)
+
 
 func _on_timer_timeout():
 	shoot()

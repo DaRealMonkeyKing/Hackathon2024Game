@@ -26,6 +26,14 @@ unique_name_in_owner = true
 position = Vector2(84.3374, -4.51807)
 scale = Vector2(1.50602, 1.50602)
 
+[node name="ShootingPoint2" type="Marker2D" parent="WeaponPivot/Gun"]
+unique_name_in_owner = true
+position = Vector2(91.0211, 140.845)
+
+[node name="ShootingPoint3" type="Marker2D" parent="WeaponPivot/Gun"]
+unique_name_in_owner = true
+position = Vector2(80.4577, -144.366)
+
 [node name="Timer" type="Timer" parent="."]
 wait_time = 1.5
 autostart = true

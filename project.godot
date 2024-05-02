@@ -18,6 +18,7 @@ config/icon="res://Images/icon.svg"
 [autoload]
 
 SignalManager="*res://Scripts/SignalManager.gd"
+InventoryManager="*res://Scripts/InventoryManager.gd"
 
 [display]
 

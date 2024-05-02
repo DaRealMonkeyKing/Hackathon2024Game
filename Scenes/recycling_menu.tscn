@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cu2wc1siehxrc"]
+
+[ext_resource type="Script" path="res://Scripts/recycling_menu.gd" id="1_ymqev"]
+
+[node name="RecyclingMenu" type="Node2D"]
+script = ExtResource("1_ymqev")
+
+[node name="Menu" type="RichTextLabel" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0

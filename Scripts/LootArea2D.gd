@@ -12,9 +12,9 @@ func _process(delta):
 
 
 func good_name(body):
-	print("item picked up")
-	print(body.name)
 	if body.name != "PlayerCharacter":
+		return
+	if len(InventoryManager.item_list) == InventoryManager.NUM_SLOTS:
 		return
 	SignalManager.picked_up_item.emit(3)
 	queue_free()

@@ -5,6 +5,7 @@ namespace Godot;
 
 public partial class PlayerCharacter : CharacterBody2D
 {
+	
 	private Vector2 currentVelocity;
 	[Export]
 	private Vector2 playerDirection;
@@ -31,10 +32,10 @@ public partial class PlayerCharacter : CharacterBody2D
 	}
 
 	public override void _Ready()
-    {
-        hpBar = GetNode<ProgressBar>("HealthBar");
+	{
+		hpBar = GetNode<ProgressBar>("HealthBar");
 		hpBar.Value = MAX_HP;
-    }
+	}
 
 	private void getInput() {
 		if (dashing) {
@@ -87,10 +88,18 @@ public partial class PlayerCharacter : CharacterBody2D
 	}
 
 	private void blink() {
+		//var signalManager = GetNode<SignalManager>("/root/SignalManager");
+		//var inventoryManager = GetNode<InventoryManager>("/root/InventoryManager");
+		
 		if (Input.IsActionJustReleased("space")) {
 			currentVelocity = playerDirection * dashSpeed;
 			dashing = true;
 		}
+
+		// TODO: selected slot == 2 is not going to always be recycling bin, just for now
+		//else if (Input.IsMouseButtonPressed(MouseButton.Right) && inventoryManager.selected_slot == 2) {
+			//signalManager.use_recycling_bin.emit();
+		//}
 	}
 
 	private void take_damage(int damage) {

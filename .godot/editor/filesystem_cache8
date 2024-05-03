@@ -1,12 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714623006
+::res://::1714705498
 export_presets.cfg::TextFile::-1::1714449473::0::1::::<><>::
 README.md::TextFile::-1::1713644269::0::1::::<><>::
 ::res://data_Hackathon 2024_windows_x86_64/::1714449473
 Hackathon 2024.deps.json::JSON::-1::1714449472::0::1::::<><>::
 Hackathon 2024.runtimeconfig.json::JSON::-1::1714449472::0::1::::<><>::
-::res://Images/::1714360681
+::res://Images/::1714705498
 Bullet.png::CompressedTexture2D::1856652876649466169::1714342404::1714342404::1::::<><>::
+character_rough.png::CompressedTexture2D::9088442886436518406::1714705475::1714705498::1::::<><>::
 Gun.png::CompressedTexture2D::4000812299355685270::1714342404::1714342404::1::::<><>::
 healthpot.png::CompressedTexture2D::796170112033126562::1714271489::1714271497::1::::<><>::
 icon.svg::CompressedTexture2D::3930723456472371130::1714003848::1714017109::1::::<><>::
@@ -218,37 +219,38 @@ mapPack_tilesheet.png::CompressedTexture2D::4478029110971832826::1714095690::171
 mapPack_tilesheet_2X.png::CompressedTexture2D::1862868980936374662::1714095690::1714096491::1::::<><>::
 ::res://kenney_map-pack/Vector/::1714620174
 mapPack_vector.svg::CompressedTexture2D::4436022417699873304::1714095690::1714620174::1::::<><>::
-::res://Scenes/::1714622977
-Bullet.tscn::PackedScene::8134166048007273685::1714622976::0::1::::<><>::res://Scripts/EnemyScripts/EnemyBullet.gd<>uid://1pm2iw2bm5k4::::res://Images/Bullet.png
-EnemyGun.tscn::PackedScene::8121339484450270662::1714622976::0::1::::<><>::uid://bxaa186ed2hm1::::res://Images/Gun.png<>res://Scripts/EnemyScripts/EnemyGun.gd
-inventory.tscn::PackedScene::4919462700984210934::1714622977::0::1::::<><>::res://Scripts/Slots.gd<>res://Scripts/Items.gd
-loot.tscn::PackedScene::6247319217578475437::1714622976::0::1::::<><>::res://Scripts/LootArea2D.gd<>uid://cxt0voc410mqr::::res://Images/lootdrops.png
-mob.tscn::PackedScene::1390456005343391963::1714622976::0::1::::<><>::res://Scripts/EnemyScripts/mob.gd<>uid://cha8rh3lswtxs::::res://Images/trash.png<>res://States/StateMachine.gd<>res://Scripts/EnemyScripts/TrashEnemyIdle.gd<>res://Scripts/EnemyScripts/TrashEnemyFollow.gd
-player_character.tscn::PackedScene::3190325885219452372::1714622976::0::1::::<><>::res://Scripts/PlayerCharacterMovement.gd<>uid://bwaco83yuctio::::res://Images/icon.svg
-recycling_menu.tscn::PackedScene::6233697178717850008::1714622977::0::1::::<><>::res://Scripts/recycling_menu.gd
-Scene1.tscn::PackedScene::7690825077109010460::1714622976::0::1::::<><>::uid://c6ww0o7agr0xb::::res://Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Fences.png<>res://Scripts/PlayerCharacter.cs<>uid://cc3etw2cuqexv::::res://Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png<>uid://t2suv80gl4gd::::res://Scenes/mob.tscn<>uid://blpog3uvxeid5::::res://Scenes/player_character.tscn<>uid://d331nqnkqvc18::::res://Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Hills.png<>uid://dj1kbel5aga4y::::res://Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Tilled_Dirt.png<>uid://b42gqq5w41khe::::res://kenney_map-pack/Tilesheet/mapPack_tilesheet.png<>uid://ccda3jyw874uk::::res://Scenes/inventory.tscn<>uid://cc8nrwsmxpkc5::::res://Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png<>uid://bg88kje6rak6a::::res://Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Wooden House.png<>uid://opgkxoicaht8::::res://Scenes/ShootingMob.tscn<>uid://cvaio1ufe2o66::::res://Scenes/loot.tscn<>uid://cu2wc1siehxrc::::res://Scenes/recycling_menu.tscn
-ShootingMob.tscn::PackedScene::1013992867169477731::1714622976::0::1::::<><>::uid://cha8rh3lswtxs::::res://Images/trash.png<>res://Scripts/EnemyScripts/ShootingMobMovement.gd<>uid://dnybjlvofrjy1::::res://Scenes/EnemyGun.tscn
-UI.tscn::PackedScene::8453895514531637236::1714622976::0::1::::<><>::res://Scripts/new_script.cs
-::res://Scripts/::1714622975
+::res://Scenes/::1714704991
+Bullet.tscn::PackedScene::8134166048007273685::1714704991::0::1::::<><>::res://Scripts/EnemyScripts/EnemyBullet.gd<>uid://1pm2iw2bm5k4::::res://Images/Bullet.png
+EnemyGun.tscn::PackedScene::8121339484450270662::1714704991::0::1::::<><>::uid://bxaa186ed2hm1::::res://Images/Gun.png<>res://Scripts/EnemyScripts/EnemyGun.gd
+inventory.tscn::PackedScene::4919462700984210934::1714704991::0::1::::<><>::res://Scripts/Slots.gd<>res://Scripts/Items.gd
+mob.tscn::PackedScene::1390456005343391963::1714704991::0::1::::<><>::res://Scripts/EnemyScripts/mob.gd<>uid://cha8rh3lswtxs::::res://Images/trash.png<>res://States/StateMachine.gd<>res://Scripts/EnemyScripts/TrashEnemyIdle.gd<>res://Scripts/EnemyScripts/TrashEnemyFollow.gd
+player_character.tscn::PackedScene::3190325885219452372::1714704991::0::1::::<><>::res://Scripts/PlayerCharacterMovement.gd<>uid://bwaco83yuctio::::res://Images/icon.svg
+recyclable.tscn::PackedScene::6247319217578475437::1714704991::0::1::::<><>::res://Scripts/RecyclableArea2D.gd<>uid://cxt0voc410mqr::::res://Images/lootdrops.png
+recycling_menu.tscn::PackedScene::6233697178717850008::1714704991::0::1::::<><>::res://Scripts/recycling_menu.gd<>res://Scripts/Recycle Button.gd
+Scene1.tscn::PackedScene::7690825077109010460::1714704990::0::1::::<><>::uid://c6ww0o7agr0xb::::res://Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Fences.png<>res://Scripts/PlayerCharacter.cs<>uid://cc3etw2cuqexv::::res://Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png<>uid://t2suv80gl4gd::::res://Scenes/mob.tscn<>uid://blpog3uvxeid5::::res://Scenes/player_character.tscn<>uid://d331nqnkqvc18::::res://Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Hills.png<>uid://dj1kbel5aga4y::::res://Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Tilled_Dirt.png<>uid://b42gqq5w41khe::::res://kenney_map-pack/Tilesheet/mapPack_tilesheet.png<>uid://ccda3jyw874uk::::res://Scenes/inventory.tscn<>uid://cc8nrwsmxpkc5::::res://Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png<>uid://bg88kje6rak6a::::res://Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Wooden House.png<>uid://opgkxoicaht8::::res://Scenes/ShootingMob.tscn<>uid://cvaio1ufe2o66::::res://Scenes/recyclable.tscn<>uid://cu2wc1siehxrc::::res://Scenes/recycling_menu.tscn
+ShootingMob.tscn::PackedScene::1013992867169477731::1714704991::0::1::::<><>::uid://cha8rh3lswtxs::::res://Images/trash.png<>res://Scripts/EnemyScripts/ShootingMobMovement.gd<>uid://dnybjlvofrjy1::::res://Scenes/EnemyGun.tscn
+UI.tscn::PackedScene::8453895514531637236::1714704991::0::1::::<><>::res://Scripts/new_script.cs
+::res://Scripts/::1714705498
 Icon.cs::CSharpScript::-1::1714269729::0::1::::<>Sprite2D<>::
-InventoryManager.gd::GDScript::-1::1714620857::0::1::::<>Node<>::
-Items.gd::GDScript::-1::1714620730::0::1::::<>HBoxContainer<>::
-LootArea2D.gd::GDScript::-1::1714620596::0::1::::<>Area2D<>::
+InventoryManager.gd::GDScript::-1::1714701041::0::1::::<>Node<>::
+Items.gd::GDScript::-1::1714701441::0::1::::<>HBoxContainer<>::
 mob.gd::GDScript::-1::1714337137::0::1::::<>CharacterBody2D<>::
 new_script.cs::CSharpScript::-1::1714269729::0::1::::<>Node<>::
-PlayerCharacter.cs::CSharpScript::-1::1714622846::0::1::::<>CharacterBody2D<>::
+PlayerCharacter.cs::CSharpScript::-1::1714701404::0::1::::<>CharacterBody2D<>::
 PlayerCharacterMovement.gd::GDScript::-1::1714343083::0::1::::<>CharacterBody2D<>::
-recycling_menu.gd::GDScript::-1::1714622975::0::1::::<>Node2D<>::
-SignalManager.gd::GDScript::-1::1714621469::0::1::::<>Node<>::
-Slots.gd::GDScript::-1::1714620730::0::1::::<>HBoxContainer<>::
-::res://Scripts/EnemyScripts/::1714620160
+RecyclableArea2D.gd::GDScript::-1::1714620596::0::1::::<>Area2D<>::
+Recycle Button.gd::GDScript::-1::1714698833::0::1::::<>Button<>::
+recycling_menu.gd::GDScript::-1::1714700914::0::1::::<>Node2D<>::
+SignalManager.gd::GDScript::-1::1714696920::0::1::::<>Node<>::
+Slots.gd::GDScript::-1::1714694459::0::1::::<>HBoxContainer<>::
+::res://Scripts/EnemyScripts/::1714694459
 EnemyBullet.gd::GDScript::-1::1714524058::0::1::::<>Area2D<>::
 EnemyGun.gd::GDScript::-1::1714620160::0::1::::<>Area2D<>::
 mob.gd::GDScript::-1::1714342404::0::1::::<>CharacterBody2D<>::
 ShootingMobMovement.gd::GDScript::-1::1714348631::0::1::::<>CharacterBody2D<>::
 TrashEnemyFollow.gd::GDScript::-1::1714362523::0::1::::TrashEnemyFollow<>State<>::
 TrashEnemyIdle.gd::GDScript::-1::1714342404::0::1::::EnemyIdle<>State<>::
-TrashEnemyShoot.gd::GDScript::-1::1714620109::0::1::::<>State<>::
+TrashEnemyShoot.gd::GDScript::-1::1714694459::0::1::::<>State<>::
 ::res://Sprout Lands - Sprites - Basic pack/::1714345214
 ::res://Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/::1714345214
 read_me.txt::TextFile::-1::1714345214::0::1::::<><>::

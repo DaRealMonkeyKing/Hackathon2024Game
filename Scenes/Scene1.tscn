@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://cc8nrwsmxpkc5" path="res://Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png" id="5_p8nyx"]
 [ext_resource type="Texture2D" uid="uid://bg88kje6rak6a" path="res://Sprout Lands - Sprites - Basic pack/Sprout Lands - Sprites - Basic pack/Tilesets/Wooden House.png" id="6_o8e7o"]
 [ext_resource type="PackedScene" uid="uid://opgkxoicaht8" path="res://Scenes/ShootingMob.tscn" id="6_s038a"]
-[ext_resource type="PackedScene" uid="uid://cvaio1ufe2o66" path="res://Scenes/loot.tscn" id="13_abchn"]
+[ext_resource type="PackedScene" uid="uid://cvaio1ufe2o66" path="res://Scenes/recyclable.tscn" id="13_abchn"]
 [ext_resource type="PackedScene" uid="uid://cu2wc1siehxrc" path="res://Scenes/recycling_menu.tscn" id="14_8rcxl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5tgq1"]
@@ -1493,12 +1493,25 @@ position = Vector2(4, 2)
 z_index = 10
 position = Vector2(-254, 609)
 
+[node name="RecyclingMenu" parent="PlayerCharacter" instance=ExtResource("14_8rcxl")]
+position = Vector2(-308, -128)
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_qh8kn")
 }
 
-[node name="Loot" parent="." instance=ExtResource("13_abchn")]
-position = Vector2(0, -2)
+[node name="Recyclable" parent="." instance=ExtResource("13_abchn")]
+position = Vector2(-127, 53)
 
-[node name="RecyclingMenu" parent="." instance=ExtResource("14_8rcxl")]
+[node name="Recyclable2" parent="." instance=ExtResource("13_abchn")]
+position = Vector2(935, 315)
+
+[node name="Recyclable3" parent="." instance=ExtResource("13_abchn")]
+position = Vector2(-162, 745)
+
+[node name="Recyclable4" parent="." instance=ExtResource("13_abchn")]
+position = Vector2(175, 543)
+
+[node name="Recyclable5" parent="." instance=ExtResource("13_abchn")]
+position = Vector2(474, 733)

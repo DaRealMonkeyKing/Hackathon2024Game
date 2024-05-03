@@ -1,5 +1,8 @@
 res://Scenes/Scene1.tscn
+res://Scripts/InventoryManager.gd
 res://Scripts/recycling_menu.gd
+res://Scripts/Slots.gd
+res://Scripts/EnemyScripts/TrashEnemyShoot.gd
 res://Scenes/UI.tscn
 res://Scenes/ShootingMob.tscn
 res://Scenes/EnemyGun.tscn
@@ -9,3 +12,11 @@ res://Scenes/Bullet.tscn
 res://Scenes/loot.tscn
 res://Scenes/inventory.tscn
 res://Scenes/recycling_menu.tscn
+res://Scripts/Items.gd
+res://Scripts/SignalManager.gd
+res://Scenes/recyclable.tscn
+res://Scripts/Recycle Button.gd
+res://Scripts/PlayerCharacter.cs
+res://Scripts/new_script.cs
+res://Scripts/Icon.cs
+res://Scripts/EnemyScripts/TrashEnemyFollow.gd

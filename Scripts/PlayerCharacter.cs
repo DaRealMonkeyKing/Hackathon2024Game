@@ -68,9 +68,9 @@ public partial class PlayerCharacter : CharacterBody2D
 			mousePos = GetGlobalMousePosition();
 			mouseDirection = (mousePos - GlobalPosition).Normalized();  
 
-			// Set the player's rotation
-			// Rotation = mouseDirection.Angle();
-			// GD.Print(mouseDirection, Rotation);
+			 //Set the player's rotation
+			 //Rotation = mouseDirection.Angle();
+			 //GD.Print(mouseDirection, Rotation);
 
 			// Left mouse button pressed - main attack
 			if (Input.IsMouseButtonPressed(MouseButton.Left)) {
@@ -88,18 +88,10 @@ public partial class PlayerCharacter : CharacterBody2D
 	}
 
 	private void blink() {
-		//var signalManager = GetNode<SignalManager>("/root/SignalManager");
-		//var inventoryManager = GetNode<InventoryManager>("/root/InventoryManager");
-		
 		if (Input.IsActionJustReleased("space")) {
 			currentVelocity = playerDirection * dashSpeed;
 			dashing = true;
 		}
-
-		// TODO: selected slot == 2 is not going to always be recycling bin, just for now
-		//else if (Input.IsMouseButtonPressed(MouseButton.Right) && inventoryManager.selected_slot == 2) {
-			//signalManager.use_recycling_bin.emit();
-		//}
 	}
 
 	private void take_damage(int damage) {

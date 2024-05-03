@@ -1502,4 +1502,16 @@ libraries = {
 }
 
 [node name="Recyclable" parent="." instance=ExtResource("13_abchn")]
-position = Vector2(0, -2)
+position = Vector2(-127, 53)
+
+[node name="Recyclable2" parent="." instance=ExtResource("13_abchn")]
+position = Vector2(935, 315)
+
+[node name="Recyclable3" parent="." instance=ExtResource("13_abchn")]
+position = Vector2(-162, 745)
+
+[node name="Recyclable4" parent="." instance=ExtResource("13_abchn")]
+position = Vector2(175, 543)
+
+[node name="Recyclable5" parent="." instance=ExtResource("13_abchn")]
+position = Vector2(474, 733)

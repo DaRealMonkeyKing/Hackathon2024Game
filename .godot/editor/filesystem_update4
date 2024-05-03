@@ -16,3 +16,7 @@ res://Scripts/Items.gd
 res://Scripts/SignalManager.gd
 res://Scenes/recyclable.tscn
 res://Scripts/Recycle Button.gd
+res://Scripts/PlayerCharacter.cs
+res://Scripts/new_script.cs
+res://Scripts/Icon.cs
+res://Scripts/EnemyScripts/TrashEnemyFollow.gd

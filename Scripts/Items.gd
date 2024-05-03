@@ -13,9 +13,9 @@ func _add_item(id : int):
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	SignalManager.picked_up_item.connect(_add_item)
+	_add_item(2)
 	_add_item(0)
 	_add_item(1)
-	_add_item(2)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

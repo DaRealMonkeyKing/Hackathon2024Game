@@ -1,18 +1,12 @@
 extends HBoxContainer
 
-const TEXTURES = [
-	preload("res://Images/stick.png"),
-	preload("res://Images/healthpot.png"),
-	preload("res://Images/recycling_bin.png"),
-	preload("res://Images/lootdrops.png")
-]
 
 #var item_list : Array
 
 func _add_item(id : int):
 	var texture_rect = TextureRect.new()
-	texture_rect.texture = TEXTURES[id]
-	InventoryManager.item_list.append(texture_rect)
+	texture_rect.texture = InventoryManager.TEXTURES[id]
+	InventoryManager.item_list.append([id, texture_rect])
 	add_child(texture_rect)
 
 

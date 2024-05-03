@@ -1,10 +1,24 @@
-[gd_scene load_steps=2 format=3 uid="uid://cu2wc1siehxrc"]
+[gd_scene load_steps=3 format=3 uid="uid://cu2wc1siehxrc"]
 
 [ext_resource type="Script" path="res://Scripts/recycling_menu.gd" id="1_ymqev"]
+[ext_resource type="Script" path="res://Scripts/Recycle Button.gd" id="2_relrl"]
 
 [node name="RecyclingMenu" type="Node2D"]
 script = ExtResource("1_ymqev")
 
 [node name="Menu" type="RichTextLabel" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+visible = false
+offset_right = 734.0
+offset_bottom = 441.0
+theme_override_font_sizes/normal_font_size = 50
+
+[node name="RecycleButton" type="Button" parent="."]
+visible = false
+offset_left = 74.0
+offset_top = 170.0
+offset_right = 284.0
+offset_bottom = 178.0
+theme_override_font_sizes/font_size = 65
+script = ExtResource("2_relrl")
+
+[connection signal="pressed" from="RecycleButton" to="." method="_on_recycle_button_pressed"]

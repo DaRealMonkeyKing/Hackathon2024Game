@@ -20,3 +20,7 @@ res://Scripts/PlayerCharacter.cs
 res://Scripts/new_script.cs
 res://Scripts/Icon.cs
 res://Scripts/EnemyScripts/TrashEnemyFollow.gd
+res://Scripts/PlayerCharacterMovement.gd
+res://States/StateMachine.gd
+res://States/State.gd
+res://Scripts/RecyclableArea2D.gd
